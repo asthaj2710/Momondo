@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg py-2">
             <div class="container">
                 <a class="navbar-brand text-white " href="index.html">
-                <img src="./assets/img/logo.png" alt="logo" class="img-fluid" width="150px">
+                    <img src="./assets/img/logo.png" alt="logo" class="img-fluid" width="150px">
                 </a>
                 <button class="navbar-toggler bg-white text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -26,7 +26,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-pink fw-bold" aria-current="page" href="#">Flights</a>
+                            <a class="nav-link active fw-bold" aria-current="page" href="#">Flights</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white fw-bold" href="javascript:void()">Hotel</a>
@@ -44,8 +44,17 @@
                     <div class="d-flex">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item me-2">
-                                <a class="nav-link text-white fw-bold" href="javascript:void()"><img src="./assets/img/4.png"
-                                        alt="language" class="img-fluid" width="25px">English(GBP)</a>            
+                                <!-- <a class="nav-link text-white fw-bold" href="javascript:void()"><img
+                                        src="./assets/img/4.png" alt="language" class="img-fluid"
+                                        width="25px">English(GBP)</a> -->
+                                        <img src="./assets/img/4.png" alt="language" class="img-fluid"
+                                        width="25px">
+                                        <select class="language fw-bold pt-2 ">
+                                            <option selected>English</option>
+                                            <option value="hin">Hindi</option>
+                                            <option value="fre">French</option>
+                                            <option value="span">Spanish</option>
+                                        </select>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-green fw-bold" href="#">Log In</a>
@@ -69,31 +78,31 @@
     <section class="banner position-relative">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 ms-4 position-absolute top-15">
+                <div class=" col-lg-6 ms-1 ms-sm-4 position-absolute top-15 text-center text-sm-start">
 
-                    <h1 class="">"The best place to find </h1>
-                    <h1>the cheapest airfares"</h1>
-                    <p class="fw-bold fs-3 mt-4">-every single time</p>
+                    <h1>"The best place to find the cheapest airfares"</h1>
+                    <p class="fw-bold fs-3 mt-4 mt-sm-0">-every single time</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-10 position-absolute bottom-0 mb-4 bg-purple rounded py-2 px-3">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                        <li class="nav-item" role="presentation">
+                <div
+                    class="col-11 col-sm-9 col-md-10 position-absolute bottom-0 mb-4 ms-3 ms-sm-0 bg-purple rounded py-1">
+                    <ul class="nav nav-pills mb-2" id="pills-tab" role="tablist">
+                        <li class="nav-item me-1" role="presentation">
                             <button class="nav-link active text-white" id="pills-home-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
                                 aria-selected="true">
                                 <i class="fa-solid fa-plane-departure"></i>Flights
                             </button>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <li class="nav-item me-1" role="presentation">
                             <button class="nav-link text-white " id="pills-profile-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
                                 aria-selected="false">
                                 <i class="fa-solid fa-hotel"></i>Hotels
                             </button>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <li class="nav-item me-1" role="presentation">
                             <button class="nav-link text-white" id="pills-contact-tab" data-bs-toggle="pill"
                                 data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
                                 aria-selected="false">
@@ -104,37 +113,199 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab" tabindex="0">
-                            <div class="row">
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="First name"
-                                        aria-label="First name">
+                            <form action="">
+                                <div class="row g-1 d-flex align-items-center">
+                                    <div class="col-sm-6 col-md-2">
+                                        <select class="form-select" aria-label="Origin City">
+                                            <option selected>Enter Origin City</option>
+                                            <option value="Del">New Delhi</option>
+                                            <option value="Ban">Bangaluru</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Sri">Srinagar</option>
+                                            <option value="Chan">Chandigarh</option>
+                                            <option value="Mum">Mumbai</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-md-1 ">
+                                        <button class="btn form-control g-0 text-white fs-3" type="submit"> <i
+                                                class="fa-solid fa-right-left"></i></button>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 ">
+                                        <select class="form-select" aria-label="Destination City">
+                                            <option selected>Destination City</option>
+                                            <option value="Del">New Delhi</option>
+                                            <option value="Ban">Bangaluru</option>
+                                            <option value="Chennai">Chennai</option>
+                                            <option value="Sri">Srinagar</option>
+                                            <option value="Chan">Chandigarh</option>
+                                            <option value="Mum">Mumbai</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="text" class="form-control" placeholder="Departure"
+                                            onfocus="(this.type = 'date')" aria-label="Departure Date">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <input type="datetime" class="form-control" placeholder="Return"
+                                            onfocus="(this.type = 'date')" aria-label="Return Date">
+                                    </div>
+                                    <div class="col-sm-6 col-md-1">
+                                        <!-- <input min="1" max="100" type="number" id="typeNumber" class="form-control"
+                                            placeholder="Passenger" aria-label="Passenger"> -->
+                                        <select class="form-select" aria-label="Adults">
+                                            <option selected>Adults</option>
+                                            <option value="one">1</option>
+                                            <option value="two">2</option>
+                                            <option value="three">3</option>
+                                            <option value="four">4</option>
+                                            <option value="five">5</option>
+                                            <option value="six">6</option>
+                                            <option value="seven">7</option>
+                                            <option value="eight">8</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-md-1">
+                                        <select class="form-select" aria-label="Children">
+                                            <option selected>Kids</option>
+                                            <option value="zero">0</option>
+                                            <option value="one">1</option>
+                                            <option value="two">2</option>
+                                            <option value="three">3</option>
+                                            <option value="four">4</option>
+                                            <option value="five">5</option>
+                                            <option value="six">6</option>
+                                            <option value="seven">7</option>
+                                            <option value="eight">8</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-md-1">
+                                        <button class="btn btn-danger form-control rounded-circle py-4" type="search">
+                                            Search</button>
+                                        <!-- <input type="button" class="form-control btn btn-danger rounded-circle p-4" value="Search" aria-label="search"> -->
+                                    </div>
                                 </div>
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="Last name"
-                                        aria-label="Last name">
+                                <div class="form-row2 row g-1 d-flex">
+                                    <div class="col-sm-6 col-md-1 text-white ">
+                                        <p class="text-white pt-3"><i
+                                                class="fa-solid fa-circle-nodes"></i>&nbsp;&nbsp;Trip Type</p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 d-flex">
+                                        <select class="form-select " name="trip" id="trip" aria-label="Trip">
+                                            <option value="round">Round Trip</option>
+                                            <option value="one">One Way</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 text-white ">
+                                        <p class="text-white ps-2 pt-3"><i
+                                                class="fa-solid fa-ticket"></i>&nbsp;&nbsp;Ticket Class
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 d-flex">
+                                        <select class="form-select " name="ticket" id="ticket" aria-label="Ticket">
+                                            <option value="economy">Economy</option>
+                                            <option value="business">Business Class</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 d-flex">
+                                        <p class="text-white  ps-2 pt-3">Direct Flights Only
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input">
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 d-flex">
+                                        <p class="text-white  ps-2 pt-3">Include nearby Airports
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input">
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="First name"
-                                        aria-label="First name">
-                                </div>
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="Last name"
-                                        aria-label="Last name">
-                                </div>
-                                <div class="col">
-                                    <input type="text" class="form-control" placeholder="Last name"
-                                        aria-label="Last name">
-                                </div>
-
-                            </div>
+                            </form>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                             aria-labelledby="pills-profile-tab" tabindex="0">
-                            ...
+                            <form action="">
+                                <div class="row g-1 d-flex align-items-center">
+                                    <div class="col-sm-6 col-md-3">
+                                        <label for="destination" class="form-label text-white">Your Destination</label>
+                                        <input type="text" class="form-control" id="destination"
+                                            placeholder="Enter destinaton or hotel name">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 ">
+                                        <label for="checkin" class="form-label text-white">Check In</label>
+                                        <input type="datetime" class="form-control" id="checkin"
+                                            placeholder="Checkin date" onfocus="(this.type = 'date')"
+                                            aria-label="Return Date">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 ">
+                                        <label for="checkout" class="form-label text-white">Check Out</label>
+                                        <input type="datetime" class="form-control" id="checkout"
+                                            placeholder="Checkout date" onfocus="(this.type = 'date')"
+                                            aria-label="Return Date">
+                                    </div>
+                                    <div class="col-sm-6 col-md-1">
+                                        <label for="room" class="form-label text-white">Room</label>
+                                        <input min="1" max="10" type="number" id="room" class="form-control"
+                                            placeholder="0" aria-label="Rooms">
+                                    </div>
+                                    <div class="col-sm-6 col-md-1">
+                                        <label for="adult" class="form-label text-white">Adults</label>
+                                        <input min="1" max="20" type="number" id="adult" class="form-control"
+                                            placeholder="0" aria-label="adults">
+                                    </div>
+                                    <div class="col-sm-6 col-md-1">
+                                        <label for="child" class="form-label text-white">Children</label>
+                                        <input min="0" max="20" type="number" id="child" class="form-control"
+                                            placeholder="0" aria-label="childs">
+                                    </div>
+                                    <div class="col-sm-6 col-md-1">
+                                        <button class="btn btn-danger form-control rounded-circle py-4" type="search">
+                                            Find Room</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel"
                             aria-labelledby="pills-contact-tab" tabindex="0">
-                            ...
+                            <form action="">
+                                <div class="row g-1 d-flex align-items-center">
+                                    <div class="col-sm-6 col-md-2">
+                                        <label for="pickup" class="form-label text-white">Pick-Up Location</label>
+                                        <input type="text" class="form-control" id="pickup"
+                                            placeholder="City,Airport,Station etc">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2">
+                                        <label for="drop" class="form-label text-white">Drop-Off Location</label>
+                                        <input type="text" class="form-control" id="drop"
+                                            placeholder="City,Airport,Station etc">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 ">
+                                        <label for="pickdate" class="form-label text-white">Pick-Up Date</label>
+                                        <input type="text" class="form-control" id="pickdate" placeholder="Pick Up Date"
+                                            onfocus="(this.type = 'date')" aria-label="Pickup Date">
+                                    </div>
+                                    <div class="col-sm-6 col-md-2 ">
+                                        <label for="picktime" class="form-label text-white">Pick Up Time</label>
+                                        <input type="text" class="form-control" id="picktime" placeholder="Pick Up Time"
+                                            onfocus="(this.type = 'datetime-local')" aria-label="Date">
+                                    </div>
+                                    <div class="col-sm-6 col-md-3" >
+                                        <label for="cartype" class="form-label text-white">Car Type</label>
+                                        <select class="form-select" id="cartype" aria-label="car type">
+                                            <option selected>Select Vehicle</option>
+                                            <option value="zero">Premium SUV</option>
+                                            <option value="one">Dezire</option>
+                                            <option value="two">Sedan</option>
+                                            <option value="three">Tempo Traveller- 9 Seater</option>
+                                            <option value="four">Tempo Traveller- 13 Seater</option>
+                                            <option value="five">Volvo Bus</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-md-1">
+                                        <button class="btn btn-danger form-control rounded-circle py-4" type="submit">
+                                           Rent a Car</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
