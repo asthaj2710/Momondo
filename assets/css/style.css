@@ -21,10 +21,10 @@ color: #55575e;
 .bg-blue{
     background-color: #1F1631;
 }
-.bg-purple1{
+/* .bg-purple1{
     background-color: #664CAD;
 
-}
+} */
 .top-10{
     top:10%
 }
@@ -114,12 +114,13 @@ header div ul li .active{
 /* Destination Section ends */
 /* Estimate section starts */
 .esti{
-    width: 100%;
-    height: 300px;
+    /* width: 100%;
+    height: 300px; */
+    background-color: #664CAD;
     color: #fff;
-    background:url(../img/estimate.jpg);
+    /* background:url(../img/estimate.jpg);
     background-size:cover;
-    background-position:center;  
+    background-position:center;   */
 }
 /* Estimate section ends */
 /* Footer Section starts */
@@ -183,8 +184,8 @@ text-decoration: none;
         font-weight:500;
     }
     .banner .banner2{
-        font-size:15px ;
-        font-weight: 300px;
+        font-size:15px !important;
+        font-weight: 300px !important;
     }
     .circle{
         height: 70px;
